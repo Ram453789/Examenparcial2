@@ -1,0 +1,21 @@
+//Programa que en un rango del 1 al 100 te dice cual es multiplo de 3
+#include <stdio.h>
+
+int main (){
+	
+	int n;
+	
+	for (n=1;n<=100;n++){
+		printf("%d ", n);
+		if(n%3==0){
+			printf("<--Es multiplo de tres ");
+		}
+		else{
+			printf("<--NO es multiplo de tres");
+		}
+		printf("\n");
+	}
+	
+	
+	return 0;
+}

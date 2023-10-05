@@ -1,0 +1,18 @@
+//Programa que te indica si un año es bisiesto o no
+#include <stdio.h>
+
+int main(){
+	
+	int x;
+	
+	printf("Introduzca el fecha: ");
+	scanf("%d", &x);
+	
+	if(x%4==0 && x%100 !=0 || x%400==0){
+		printf("Es biciesto");
+	}
+	else{
+		printf(" No es biciesto");
+	}
+	return 0;
+}

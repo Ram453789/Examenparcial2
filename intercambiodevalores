@@ -1,0 +1,30 @@
+//Programa de intercambio de valores
+#include <stdio.h>
+
+int main(){
+	
+	int v1,v2,v3,c;
+	
+	printf("dato1: ");
+	scanf("%d", &v1);
+	
+	printf("dato2: ");
+	scanf("%d", &v2);
+	
+	printf("dato3: ");
+	scanf("%d", &v3);
+	
+	c=v3;
+	v3=v1;
+	v1=c;
+	
+	c=v3;
+	v3=v2;
+	v2=c;
+	
+	printf("Variable 1: %d\n",v1);
+	printf("Variable 2: %d\n",v2);
+	printf("Variable 3: %d\n",v3);
+	
+	return 0;
+}

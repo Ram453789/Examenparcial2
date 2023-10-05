@@ -1,0 +1,23 @@
+//Piramide
+#include <stdio.h>
+
+int main() {
+    int niv,i,j;
+
+    printf("De cuantos niveles quiere la priamide? ");
+    scanf("%d", &niv);
+	
+	if(niv<=60){
+    for (i= 1; i <= niv; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ", j);
+        	}
+        printf("\n");
+    	}
+	}
+	else{
+		printf("Numero de niveles no valido");
+	}
+
+    return 0;
+}

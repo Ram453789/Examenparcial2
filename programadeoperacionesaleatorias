@@ -1,0 +1,40 @@
+//Programa que da operaciones aleatorias
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+	
+	srand(time(NULL));
+	int op1,a1,a2,r;
+	
+
+	do{
+		a1=rand() %11;
+		a2=rand() %11;
+		op1=rand() %(5 + 1 - 1) +1; 
+		
+		if(op1 == 1){
+			r= a1 + a2;
+			printf("%d + %d = %d \n", a1, a2, r);
+		}
+		else if(op1 == 2){
+			r= a1 - a2;
+			printf("%d - %d = %d \n", a1, a2, r);
+		}
+		else if(op1 == 3){
+			r= a1 * a2;
+			printf("%d * %d = %d \n", a1, a2, r);
+		}
+		else if(op1 == 4){
+			r = a1 / a2;
+			printf("%d / %d = %d \n", a1, a2, r);
+		}
+		else if(op1 == 5){
+			printf("Terminacion de operaciones");
+		}
+		op1++;
+	}while(op1 >= 1, op1 <= 5);
+	
+	return 0;
+}
